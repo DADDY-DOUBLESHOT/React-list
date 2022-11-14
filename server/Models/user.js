@@ -17,6 +17,10 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  avatar:{
+    type:Number,
+    required:true,
+  }
 });
 
 userSchema.methods.getToken = (userId) => {
